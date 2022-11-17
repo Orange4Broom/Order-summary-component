@@ -96,6 +96,7 @@ body #card #order-content #summary #summary-left #price #plan-name {
 body #card #order-content #summary #summary-left #price #plan-payment {
   margin: 0;
   font-weight: 500;
+  color: hsl(224deg, 23%, 55%);
 }
 body #card #order-content #summary #summary-right a {
   margin-right: 25px;
