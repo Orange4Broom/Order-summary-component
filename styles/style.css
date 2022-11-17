@@ -17,12 +17,15 @@ body {
   background-size: cover;
 }
 body #card {
-  height: 700px;
+  max-height: 700px;
+  min-height: 500px;
   width: 460px;
+  min-width: 200px;
 }
 body #card #card-illustration {
   height: 225px;
   max-width: 460px;
+  min-width: 200px;
   border-radius: 20px 20px 0 0;
   background-image: url(/images/illustration-hero.svg);
   background-size: cover;
@@ -34,7 +37,8 @@ body #card #order-content {
   align-items: center;
   text-align: center;
   height: 475px;
-  max-width: 460px;
+  width: 100%;
+  min-width: 200px;
   padding: 20px 45px 0 45px;
   margin-top: 0;
   border-radius: 0 0 20px 20px;
@@ -56,8 +60,10 @@ body #card #order-content #summary {
   justify-content: space-between;
   align-items: center;
   height: 85px;
-  width: 370px;
+  width: 100%;
+  min-width: 200px;
   border-radius: 10px;
+  margin-bottom: 40px;
   background-color: hsl(225deg, 100%, 98%);
 }
 body #card #order-content #summary #summary-left {
@@ -81,7 +87,7 @@ body #card #order-content #summary #summary-left #price {
   justify-content: flex-start;
   align-items: center;
   width: 100px;
-  height: 45px;
+  height: 50px;
 }
 body #card #order-content #summary #summary-left #price #plan-name {
   margin: 0 0 5px 0;
@@ -99,13 +105,14 @@ body #card #order-content #summary #summary-right a {
 }
 body #card #proceed-pay {
   height: 50px;
-  width: 370px;
+  width: 100%;
+  min-width: 100px;
   border: none;
   border-radius: 10px;
-  margin: 30px 0 20px 0;
   color: hsl(0deg, 0%, 100%);
   font-size: 14px;
   font-weight: 900;
+  line-height: 50px;
   background: hsl(245deg, 75%, 52%);
   box-shadow: 0px 16px 25px rgba(56, 41, 224, 0.2745098039);
 }
@@ -113,4 +120,10 @@ body #card #cancel {
   font-size: 14px;
   font-weight: 700;
   color: hsl(224deg, 23%, 55%);
+  margin-top: 30px;
+}
+@media (max-width: 700px) {
+  body #card {
+    margin: 0 25px;
+  }
 }/*# sourceMappingURL=style.css.map */
